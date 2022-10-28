@@ -13,7 +13,7 @@ namespace Evaluator {
          * Finds all href links from the HTML website.
          */
         public getSources(): Promise<any[]> {
-            return this.evaluate("//a[@class='bt-open-in-overlay']/@href");
+            return this.evaluate("//a/@href");
         }
 
         protected getValueFromSelectedNode(node: xpath.SelectedValue): any {
